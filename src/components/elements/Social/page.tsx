@@ -1,0 +1,35 @@
+import { FaFacebook, FaYoutube,FaLinkedinIn } from "react-icons/fa";
+import Link from "next/link";
+
+export default function Social() {
+  return (
+    <>
+      <ul className="flex items-center gap-4">
+        <li>
+          <Link
+            href="/"
+            className="bg h-12 w-12 text-white text-xl rounded-md flex items-center justify-center"
+          >
+            <FaFacebook />
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="/"
+            className="bg h-12 w-12 text-white text-xl rounded-md flex items-center justify-center"
+          >
+            <FaYoutube />
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="/"
+            className="bg h-12 w-12 text-white text-xl rounded-md flex items-center justify-center"
+          >
+            <FaLinkedinIn />
+          </Link>
+        </li>
+      </ul>
+    </>
+  );
+}

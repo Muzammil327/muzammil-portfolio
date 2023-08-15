@@ -1,0 +1,211 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+.section h1 {
+  @apply my-2 md:text-4xl text-2xl font-bold text-black;
+}
+.section h2 {
+  @apply my-2 md:text-3xl text-xl font-semibold text-black;
+}
+.section h3 {
+  @apply my-2 md:text-2xl text-lg font-medium text-black;
+}
+.section p {
+  @apply text-gray-500 leading-8 md:text-lg text-base my-5;
+}
+.section ul {
+  @apply list-decimal py-3 ml-3;
+}
+.section ul li {
+  @apply text-gray-500 leading-8 text-lg my-5;
+}
+.icon {
+  transition:  0.6s ease-out;
+}
+.icon:hover {
+  transform: rotate(360deg) scale(1.5);
+}
+.home {
+  width: 100%;
+  background-image: linear-gradient(145deg, #fd59a7, #f17539);
+}
+.overlay {
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  /* background-color: rgb(0,0,0); */
+  /* background-color: rgba(0,0,0, 0.9); */
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.element {
+  animation: myAnim 1s ease 0s 1 normal forwards;
+}
+@keyframes myAnim {
+  0% {
+    transform: scaleY(0.4);
+  }
+
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+/* ---------------------------------------------------------------
+------------------------- Project start here ---------------------
+--------------------------------------------------------------- */
+
+.project .text .ptag:hover .picon {
+  @apply transition-all ml-7;
+}
+
+/* ---------------------------------------------------------------
+------------------------- Blog start here ---------------------
+--------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------
+------------------------- Services start here ---------------------
+--------------------------------------------------------------- */
+.card {
+  width: 100%;
+  height: 100%;
+  padding: 2em 1.5em;
+  background: linear-gradient(#ffffff 50%, #ff8e56 50%);
+  background-size: 100% 200%;
+  background-position: 0 2.5%;
+  border-radius: 5px;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  transition: 0.5s;
+}
+.card:hover {
+  background-position: 0 100%;
+  transform: scale(1.1);
+}
+.card:hover .icon {
+  @apply rounded-full;
+}
+.card:hover h3 {
+  color: #ffffff;
+}
+.card:hover p {
+  color: #f0f0f0;
+}
+/* ---------------------------------------------------------------
+------------------------- button start here ----------------------
+--------------------------------------------------------------- */
+.bg {
+  background-image: linear-gradient(160deg, #fd59a7, #f17539);
+}
+.btn2 {
+  @apply text-white py-3 px-7;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(160deg, #fd59a7, #f17539);
+  border: 1px solid rgba(253, 89, 167, 0.2);
+}
+.c1 {
+  color: #f17539;
+}
+.btn1 {
+  @apply text-black bg-white py-3 px-7 border-solid border-2 border-white transition-all;
+}
+.btn1:hover {
+  @apply border-solid border-2 border-white text-white transition-all;
+  background-color: #f17539;
+}
+.btn {
+  @apply rounded-md bg-clip-border items-center justify-center transition-all text-lg font-semibold;
+}
+
+/* ---------------------------------------------------------------
+--------------------- about resume start here --------------------
+--------------------------------------------------------------- */
+.home_banner_area .box_1620 {
+  min-height: 700px;
+  border-radius: 12px;
+  position: relative;
+  bottom: 60px;
+  background: #fff;
+  padding: 30px;
+  box-shadow: 0px 20px 80px 0px rgba(153, 153, 153, 0.3);
+}
+
+/* ---------------------------------------------------------------
+--------------------- hero home start here --------------------
+--------------------------------------------------------------- */
+.section-img-background {
+  background-image: url(https://muzammil-portflio.vercel.app/image.webp);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+/* ---------------------------------------------------------------
+--------------------- skill start here --------------------
+--------------------------------------------------------------- */
+
+.skill {
+  @apply text-center bg-slate-700 text-white rounded-lg p-4 relative;
+}
+.skill .image {
+  @apply h-32 w-32 mx-auto rounded-full;
+}
+.skill .btn {
+  @apply w-full bg-blue-500 text-white text-base rounded-full p-2;
+}
+/* ---------------------------------------------------------------
+--------------------- form start here --------------------
+--------------------------------------------------------------- */
+.right-form {
+  text-align: left;
+  background-image: linear-gradient(
+    160deg,
+    rgba(253, 89, 167, 0.3),
+    rgba(241, 117, 57, 0.3)
+  );
+  border-radius: 6px;
+  padding: 30px;
+}
+.text-field {
+  width: 100%;
+  height: auto;
+  color: #000;
+  letter-spacing: 0.2px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  margin-bottom: 20px;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5em;
+  outline: none;
+}
+.textarea-form {
+  min-height: 160px;
+  color: #000;
+  letter-spacing: 0.2px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  margin-bottom: 20px;
+  padding: 16px;
+  font-size: 16px;
+  line-height: 1.5em;
+  outline: none;
+}
