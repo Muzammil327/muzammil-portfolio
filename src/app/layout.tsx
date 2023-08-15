@@ -2,7 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
-
+import { Analytics } from '@vercel/analytics/react';
 // import file common 
 import Header from "@/components/layout/header/page";
 import Footer from "@/components/layout/footer/page";
@@ -27,6 +27,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Header />
         {children}
+        <Analytics />
         <FooterForm />
         <Footer />
       </body>
