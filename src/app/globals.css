@@ -2,17 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+
+*,*::after,*::before {
+  @apply m-0 p-0 box-border;
   font-family: sans-serif;
 }
 html {
-  scroll-behavior: smooth;
+  @apply w-full scroll-smooth;
 }
 body{
   @apply overflow-x-hidden;
+}
+.section {
+  @apply py-10;
 }
 .section h1 {
   @apply my-2 md:text-4xl text-2xl font-bold text-black;
