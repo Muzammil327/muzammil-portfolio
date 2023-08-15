@@ -11,6 +11,9 @@
 html {
   scroll-behavior: smooth;
 }
+body{
+  @apply overflow-x-hidden;
+}
 .section h1 {
   @apply my-2 md:text-4xl text-2xl font-bold text-black;
 }
