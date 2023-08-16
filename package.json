@@ -22,6 +22,7 @@
     "autoprefixer": "10.4.15",
     "eslint": "8.47.0",
     "eslint-config-next": "13.4.13",
+    "file-saver": "^2.0.5",
     "next": "^13.4.16",
     "next-sanity": "^5.3.0",
     "postcss": "8.4.27",
@@ -37,6 +38,7 @@
     "typescript": "5.1.6"
   },
   "devDependencies": {
+    "@types/file-saver": "^2.0.5",
     "@types/react-slick": "^0.23.10"
   }
 }

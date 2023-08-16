@@ -5,11 +5,19 @@ import Container from "@/components/elements/container/page";
 import { FaBars, FaTimes, FaAngleRight } from "react-icons/fa";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import { saveAs } from "file-saver";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
 
   const router = useRouter();
+
+  const saveFile = () => {
+    saveAs(
+      "/resume.pdf",
+      "frontend-resume.pdf"
+    );
+  };
 
   return (
     <div className="home py-7">
@@ -76,13 +84,12 @@ export default function Header() {
               ))}
             </ul>
 
-            <Link
-              href="/resume.pdf"
+            <button
+             onClick={saveFile}
               className={open ? "btn btn2 flex w-full my-4" : "btn btn1"}
-              download="CV-muzammil-safdar"
             >
               Download CV
-            </Link>
+            </button>
           </div>
         </div>
       </Container>
