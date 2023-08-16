@@ -23,8 +23,7 @@ export default function HireCard() {
           <Icon />
           <Link
             href="/"
-            className="bg-white block w-auto py-2 rounded-3xl mt-4 hover:bg-red-400 transition-all hover:border-2 hover:border-solid border-red-400 border-2 border-solid hover:border-white"
-          >
+            className="bg-white block w-auto py-2 rounded-3xl mt-4 hover:bg-red-400 transition-all hover:border-2 hover:border-solid border-red-400 border-2 border-solid hover:border-white text-center hover:text-white font-semibold text-lg"  >
             Hire Me
           </Link>
         </div>
@@ -48,8 +47,7 @@ export default function HireCard() {
           <Link
             href="https://www.upwork.com/freelancers/~013fbdbd02c10b41af"
             target="_blank"
-            className="bg-white block w-auto py-2 rounded-3xl mt-4 hover:bg-red-400 transition-all hover:border-2 hover:border-solid border-red-400 border-2 border-solid hover:border-white"
-          >
+            className="bg-white block w-auto py-2 rounded-3xl mt-4 hover:bg-red-400 transition-all hover:border-2 hover:border-solid border-red-400 border-2 border-solid hover:border-white text-center hover:text-white font-semibold text-lg"  >
             Hire Me
           </Link>
         </div>
@@ -70,8 +68,7 @@ export default function HireCard() {
           <Link
             href="/"
             target="_blank"
-            className="bg-white block w-auto py-2 rounded-3xl mt-4 hover:bg-red-400 transition-all hover:border-2 hover:border-solid border-red-400 border-2 border-solid hover:border-white"
-          >
+            className="bg-white block w-auto py-2 rounded-3xl mt-4 hover:bg-red-400 transition-all hover:border-2 hover:border-solid border-red-400 border-2 border-solid hover:border-white text-center hover:text-white font-semibold text-lg"   >
             Hire Me
           </Link>
         </div>
