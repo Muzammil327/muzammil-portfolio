@@ -32,6 +32,21 @@ export default defineType({
       title: 'Description',
       type: 'text',
     }),
+    defineField({
+      name: 'tag',
+      title: 'Tag',
+      type: 'string',
+    }),
+    defineField({
+      name: 'date',
+      title: 'Date', 
+      type: 'date'
+    }),
+    defineField({
+      name: 'body',
+      title: 'Body',
+      type: 'blockContent',
+    }),
   ],
   preview: {
     select: {

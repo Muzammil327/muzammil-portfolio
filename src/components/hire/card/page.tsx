@@ -84,8 +84,8 @@ export function Icon() {
         <h3 className="text-2xl font-medium text-white">{data.name}</h3>
         <span className="text-slate-100 font-medium">{data.position}</span>
       </div>
-      <hr className="my-5 text-slate-100" />
-      <div>
+      <hr className="my-8 text-slate-100" />
+      <div className="mb-3">
         <ul className="flex gap-5 justify-between">
           <li className="flex flex-col justify-center text-center">
             <span className="bg-slate-100 icon h-16 w-16 rounded-full flex items-center justify-center text-2xl">

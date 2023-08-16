@@ -1,11 +1,11 @@
 "use client";
-import { Blog } from "@/src/types/page";
+import { Type } from "@/src/types/page";
 import { PortableText } from "@portabletext/react";
 import Image from "next/image";
 import { urlForImage } from "@/sanity/lib/image";
 
 interface Iprops {
-  datas: Blog;
+  datas: Type;
 }
 
 export default function Portflioleft({ datas }: Iprops) {

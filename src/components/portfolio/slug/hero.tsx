@@ -36,7 +36,7 @@ export default function PortfolioHero({ datas }: Iprops) {
               title={datas.title}
               height={250}
               width={300}
-              className="w-full h-[500px] rounded-lg my-auto"
+              className="w-full h-[400px] rounded-lg my-auto"
             />
           </div>
         </div>

@@ -11,7 +11,10 @@ export async function getserviceother(slugs: string): Promise<Type> {
       title,
       "image": image.asset->url,
       "slugs": slugs.current,
-      description
+      description,
+      tag,
+      date,
+      body[]
     }`,{ slugs }
   );
 }

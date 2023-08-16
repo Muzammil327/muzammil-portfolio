@@ -77,6 +77,9 @@ export type Type = {
     image:TImage;
     description: string;  
     slugs:Slug;
+    tag:string;
+    date:string;
+    body: []
 }
 // blog 
 export type Blog = {

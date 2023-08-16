@@ -1,10 +1,10 @@
 import React from "react";
-import Social from "../../elements/Social/page";
-import { Blog, Skill } from "@/src/types/page";
+import Social from "../../../elements/Social/page";
+import { Type } from "@/src/types/page";
 import { FaArrowRight } from "react-icons/fa";
 
 interface Iprops {
-  datas: Blog;
+  datas: Type;
 }
 
 export default function PortfolioRight({ datas }: Iprops) {
@@ -33,6 +33,21 @@ export default function PortfolioRight({ datas }: Iprops) {
         </span>
       </div>
 
+      {/* <div>
+        <span className="mt-3 text-[22px] font-semibold text-black leading-7">
+          Skills:
+        </span>
+        {datas?.skill?.map((data: Skill) => (
+          <div key={data._id}>
+            <div className="bg py-3 w-full text-white my-3 rounded-md font-semibold flex justify-between px-4 items-center">
+              <span>{data.title}</span>
+              <span>
+                <FaArrowRight />
+              </span>
+            </div>
+          </div>
+        ))}
+      </div> */}
     </div>
   );
 }

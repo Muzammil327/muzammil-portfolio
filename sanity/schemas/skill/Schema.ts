@@ -33,7 +33,7 @@ export default defineType({
     select: {
       title: 'title',
       position: 'position',
-      image: 'image',
+      media: 'image',
     },
     prepare(selection) {
       const {position} = selection

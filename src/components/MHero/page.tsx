@@ -18,10 +18,10 @@ export default function MHero() {
     cssEase: "linear"
   };
   return (
-    <div className="mb-16">
+    <div className="mb-12">
       <Container>
         <div className="grid md:grid-cols-2 grid-cols-1 gap-7">
-        <div className="lg:py-44 md:py-20 py-8 md:text-left text-center">
+        <div className="lg:py-40 md:py-20 py-8 md:text-left text-center">
           <h1 className="xl:text-5xl lg:text-3xl md:text-2xl text-3xl md:my-8 my-4 font-bold text-black">{aboutData.head}</h1>
           <p className="text-base font-normal mb-7 text-slate-500 leading-7">
             {aboutData.description}
@@ -31,7 +31,7 @@ export default function MHero() {
             <Social />
           </div>
         </div>
-        <div className="md:pt-12 pt-8">
+        <div className="md:pt-56 pt-8">
        
       <Slider {...settings}>
         
@@ -58,22 +58,26 @@ export default function MHero() {
 const SliderImage = [
   {
     id:"1",
-    image:'/mhero.webp'
+    image:'/slider/structure.png'
   },
   {
     id:"2",
-    image:'/mhero.webp'
+    image:'/slider/styling.png'
   },
   {
     id:"3",
-    image:'/mhero.webp'
+    image:'/slider/framework.png'
   },
   {
     id:"4",
-    image:'/mhero.webp'
+    image:'/slider/tools.png'
   },
   {
     id:"5",
-    image:'/mhero.webp'
+    image:'/slider/cms.png'
+  },
+  {
+    id:"5",
+    image:'/slider/backend.png'
   }
 ]

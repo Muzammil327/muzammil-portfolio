@@ -20,7 +20,7 @@ export default function Header() {
   };
 
   return (
-    <div className="home py-7">
+    <div className="home py-4">
       <Container>
         <div className="flex items-center md:gap-16 gap-8 justify-between">
           {/* logo  */}
