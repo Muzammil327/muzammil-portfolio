@@ -22,7 +22,7 @@ export default function PortfolioHero({ datas }: Iprops) {
             <p className="text-base font-normal mb-7 text-slate-500 leading-7">
               {datas.description}
             </p>
-            <Link href={datas.livelink} className="btn btn2 ">
+            <Link href={datas.livelink} target="_blank" className="btn btn2 ">
               Demo Live
             </Link>
             <div className="mt-6 ">
