@@ -1,7 +1,7 @@
 "use client";
 import { Type } from "@/src/types/page";
-import { PortableText } from "@portabletext/react";
 import Image from "next/image";
+import { PortableText } from "@portabletext/react";
 import { urlForImage } from "@/sanity/lib/image";
 
 interface Iprops {

@@ -1,8 +1,8 @@
-
-import PortfolioHero from "@/src/components/portfolio/slug/hero";
-import Portflioleft from "@/src/components/portfolio/slug/left";
-import PortfolioRight from "@/src/components/portfolio/slug/right";
-import Container from "@/src/components/elements/container/page";
+import dynamic from "next/dynamic";
+const PortfolioHero = dynamic(() => import("@/components/portfolio/slug/hero"));
+const Portflioleft = dynamic(() => import("@/components/portfolio/slug/left"));
+const PortfolioRight = dynamic(() => import("@/components/portfolio/slug/right"));
+const Container = dynamic(() => import("@/components/elements/container/page"));
 import { getProject } from "@/sanity/schemas/portflio/util";
 
 type Iprops = {

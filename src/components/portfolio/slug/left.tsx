@@ -1,8 +1,8 @@
 "use client";
-import { Portfolio } from "@/src/types/page";
-import { PortableText } from "@portabletext/react";
 import Image from "next/image";
+import { PortableText } from "@portabletext/react";
 import { urlForImage } from "@/sanity/lib/image";
+import { Portfolio } from "@/src/types/page";
 
 interface Iprops {
   datas: Portfolio;

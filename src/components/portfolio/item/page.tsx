@@ -1,7 +1,7 @@
 'use client'
-import { Portfolio } from "@/types/page";
 import Link from "next/link";
 import Image from "next/image";
+import { Portfolio } from "@/types/page";
 import { FaAngleRight } from "react-icons/fa";
 import { urlForImage } from "@/sanity/lib/image";
 

@@ -1,7 +1,7 @@
-import { Author, Blog } from "@/types/page";
 import Image from "next/image";
-import { urlForImage } from "@/sanity/lib/image";
 import Link from "next/link";
+import { urlForImage } from "@/sanity/lib/image";
+import { Author, Blog } from "@/types/page";
 
 interface IProps {
   datas: Blog;

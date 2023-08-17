@@ -1,5 +1,6 @@
-import SHero from "@/src/components/SHero/page";
-import HireCard from "@/src/components/hire/card/page";
+import dynamic from "next/dynamic";
+const SHero = dynamic(() => import("@/components/SHero/page"));
+const HireCard = dynamic(() => import("@/components/hire/card/page"));
 
 export default function HireTemplate() {
   return (

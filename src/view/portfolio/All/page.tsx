@@ -1,9 +1,10 @@
-import SHero from "@/src/components/SHero/page";
+import dynamic from "next/dynamic";
+const SHero = dynamic(() => import("@/components/SHero/page"));
+const Heading = dynamic(() => import("@/components/elements/Heading/page"));
 import {
   PortfolioList,
   PortfolioHList,
 } from "@/components/portfolio/List/page";
-import Heading from "@/src/components/elements/Heading/page";
 import { getProjects } from "@/sanity/schemas/portflio/util";
 
 export async function PortfolioAll() {

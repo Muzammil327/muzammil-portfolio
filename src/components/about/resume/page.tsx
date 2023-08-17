@@ -1,18 +1,16 @@
-import Container from "../../elements/container/page";
+import Image from "next/image";
+import dynamic from "next/dynamic";
+const Container = dynamic(() => import("@/components/elements/container/page"));
+const Social = dynamic(() => import("@/components/elements/Social/page"));
 import {
   FaPhone,
   FaCalendar,
   FaEnvelope,
   FaLocationArrow,
 } from "react-icons/fa";
-import Social from "../../elements/Social/page";
-import Image from "next/image";
-import { getAbouts } from "@/sanity/schemas/about/util";
-import { urlForImage } from "@/sanity/lib/image";
 import aboutData from "./data";
 
 export default function Resume() {
- 
   return (
     <section className="home_banner_area relative z-10 lg:mb-20 md:mb-12 mb-4">
       <Container>
@@ -41,17 +39,19 @@ export default function Resume() {
 
                     <div className="mt-4">
                       <p className=" uppercase text-base font-medium mb-5">
-                        <span className=" lg:text-5xl md:text-3xl sm:text-2xl text-xl uppercase mb-10 pb-10 text-orange-500">
+                        <span className=" lg:text-5xl text-4xl capitalize mb-10 pb-10 text-orange-500">
                           {aboutData.name}
                         </span>{" "}
                         <br />
-                        <span className="text-lg">
-                        {aboutData.position}
+                        <span className="text-lg capitalize">
+                          {aboutData.position}
                         </span>
                       </p>
-                      <p className="text-gray-800 md:mb-10 mb-3 md:text-base text-sm">{aboutData.description}</p>
+                      <p className="text-gray-800 md:mb-10 mb-3 leading-7 text-base">
+                        {aboutData.description}
+                      </p>
                       <ul className="list basic_info mb-3">
-                        <li className="md:mb-4 mb-2">
+                        <li className="md:mb-4 mb-3">
                           <span className="relative lg:pl-10 pl-6  md:text-base text-sm text-gray-400 flex items-center">
                             <i className="absolute left-0 c1 text-base">
                               <FaCalendar />
@@ -59,7 +59,7 @@ export default function Resume() {
                             {aboutData.startDate}
                           </span>
                         </li>
-                        <li className="md:mb-4 mb-2">
+                        <li className="md:mb-4 mb-3">
                           <span className="relative lg:pl-10 pl-6  md:text-base text-sm text-gray-400 flex items-center">
                             <i className="absolute left-0 c1 text-base">
                               <FaPhone />
@@ -67,7 +67,7 @@ export default function Resume() {
                             {aboutData.phone}
                           </span>
                         </li>
-                        <li className="md:mb-4 mb-2">
+                        <li className="md:mb-4 mb-3">
                           <span className="relative lg:pl-10 pl-6  md:text-base text-sm text-gray-400 flex items-center">
                             <i className="absolute left-0 c1 text-base">
                               <FaEnvelope />
@@ -75,7 +75,7 @@ export default function Resume() {
                             {aboutData.email}
                           </span>
                         </li>
-                        <li className="md:mb-4 mb-2">
+                        <li className="md:mb-4 mb-3">
                           <span className="relative lg:pl-10 pl-6  md:text-base text-sm text-gray-400 flex items-center">
                             <i className="absolute left-0 c1 text-base">
                               <FaLocationArrow />
@@ -85,8 +85,9 @@ export default function Resume() {
                         </li>
                       </ul>
                     </div>
-
-                    <Social />
+                    <div className="my-3">
+                      <Social />
+                    </div>
                   </div>
                 </div>
               </div>

@@ -39,15 +39,6 @@ export default function Social() {
             <FaGithub />
           </Link>
         </li>
-        <li>
-          <Link
-            href="https://www.linkedin.com/in/muzammil-safdar/"
-            target="_blank"
-            className="bg h-10 w-10 text-white text-xl rounded-md flex items-center justify-center"
-          >
-            <FaLinkedinIn />
-          </Link>
-        </li>
       </ul>
     </>
   );

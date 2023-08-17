@@ -1,5 +1,6 @@
-import SHero from "@/src/components/SHero/page";
-import Resume from "@/src/components/about/resume/page";
+import dynamic from "next/dynamic";
+const SHero = dynamic(() => import("@/components/SHero/page"));
+const Resume = dynamic(() => import("@/components/about/resume/page"));
 
 export default function AboutTemplate() {
   return (

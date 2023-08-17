@@ -1,5 +1,5 @@
-import { Skill } from "@/types/page";
 import Image from "next/image";
+import { Skill } from "@/types/page";
 import { urlForImage } from "@/sanity/lib/image";
 
 interface Iprops {

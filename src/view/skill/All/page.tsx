@@ -1,6 +1,7 @@
+import dynamic from "next/dynamic";
+const SHero = dynamic(() => import("@/components/SHero/page"));
+const SkillCardList = dynamic(() => import("@/components/skill/skill/list/page"));
 import { getSkills } from "@/sanity/schemas/skill/util";
-import SkillCardList from "@/src/components/skill/skill/list/page";
-import SHero from "@/src/components/SHero/page";
 
 export default async function SkillAll() {
   const skill = await getSkills();

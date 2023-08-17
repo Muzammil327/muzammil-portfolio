@@ -1,5 +1,5 @@
-import React from "react";
-import Social from "../../elements/Social/page";
+import dynamic from "next/dynamic";
+const Social = dynamic(() => import("@/components/elements/Social/page"));
 import { Portfolio, Skill } from "@/src/types/page";
 import { FaArrowRight } from "react-icons/fa";
 

@@ -1,6 +1,7 @@
 "use client";
+import dynamic from "next/dynamic";
+const Container = dynamic(() => import("@/components/elements/container/page"));
 import { Logo1, Logo2 } from "@/components/elements/logo/page";
-import Container from "@/components/elements/container/page";
 import { FaBars, FaTimes, FaAngleRight } from "react-icons/fa";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
@@ -12,10 +13,7 @@ export default function Header() {
   const router = useRouter();
 
   const saveFile = () => {
-    saveAs(
-      "/resume.pdf",
-      "frontend-resume"
-    );
+    saveAs("/resume.pdf", "frontend-resume");
   };
 
   return (
@@ -24,10 +22,10 @@ export default function Header() {
         <div className="flex items-center md:gap-16 gap-8 justify-between cursor-pointer">
           {/* logo  */}
           <span
-           onClick={() => {
-            router.push("/");
-            setOpen(false);
-          }}
+            onClick={() => {
+              router.push("/");
+              setOpen(false);
+            }}
           >
             <Logo1 />
           </span>
@@ -50,12 +48,13 @@ export default function Header() {
                 : "lg:flex hidden items-center gap-8"
             }
           >
-            <span 
-               onClick={() => {
+            <span
+              onClick={() => {
                 router.push("/");
                 setOpen(false);
               }}
-            className={open ? "mx-auto my-4 cursor-pointer" : "hidden"}>
+              className={open ? "mx-auto my-4 cursor-pointer" : "hidden"}
+            >
               <Logo2 />
             </span>
             <ul
@@ -77,13 +76,19 @@ export default function Header() {
                         router.push(`${data.link}`);
                         setOpen(false);
                       }}
-                      className={ open
-                        ? "flex items-center justify-between cursor-pointer"
-                        : "cursor-pointer "}
+                      className={
+                        open
+                          ? "flex items-center justify-between cursor-pointer"
+                          : "cursor-pointer "
+                      }
                     >
-                      <span className={ open
-                          ? "text-black"
-                          : "text-white font-semibold "} >{data.text}</span>
+                      <span
+                        className={
+                          open ? "text-black" : "text-white font-semibold "
+                        }
+                      >
+                        {data.text}
+                      </span>
                       <span className={open ? "block" : "hidden"}>
                         <FaAngleRight />
                       </span>
@@ -94,7 +99,7 @@ export default function Header() {
             </ul>
 
             <button
-             onClick={saveFile}
+              onClick={saveFile}
               className={open ? "btn btn2 flex w-full my-4" : "btn btn1"}
             >
               Download CV

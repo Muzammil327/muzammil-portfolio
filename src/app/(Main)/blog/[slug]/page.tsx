@@ -1,8 +1,9 @@
+import dynamic from "next/dynamic";
+const BlogHero = dynamic(() => import("@/components/blog/slug/hero"));
+const Blogleft = dynamic(() => import("@/components/blog/slug/left"));
+const BlogRight = dynamic(() => import("@/components/blog/slug/right"));
+const Container = dynamic(() => import("@/components/elements/container/page"));
 import { getBlog } from "@/sanity/schemas/blog/util";
-import BlogHero from "@/src/components/blog/slug/hero";
-import Portflioleft from "@/src/components/blog/slug/left";
-import PortfolioRight from "@/src/components/blog/slug/right";
-import Container from "@/src/components/elements/container/page";
 
 interface Iprops {
   params: {
@@ -18,10 +19,10 @@ export default async function Page({ params }: Iprops) {
       <BlogHero datas={blog} />
       <div className="grid md:grid-cols-7 grid-cols-1 gap-8">
         <div className="md:col-span-5 col-span-2">
-          <Portflioleft datas={blog} />
+          <Blogleft datas={blog} />
         </div>
         <div className="md:col-span-2 col-span-1">
-          <PortfolioRight datas={blog} />
+          <BlogRight datas={blog} />
         </div>
       </div>
     </Container>

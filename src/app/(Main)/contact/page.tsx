@@ -1,4 +1,5 @@
-import ContactTemplate from '@/view/contact/page'
+import dynamic from "next/dynamic";
+const ContactTemplate = dynamic(() => import("@/view/contact/page"));
 
 export default function Contact() {
   return (

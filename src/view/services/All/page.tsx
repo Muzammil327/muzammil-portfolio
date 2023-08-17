@@ -1,6 +1,7 @@
+import dynamic from "next/dynamic";
+const SHero = dynamic(() => import("@/components/SHero/page"));
+const Heading = dynamic(() => import("@/components/elements/Heading/page"));
 import { ServiceList, ServiceHList } from "@/components/services/List/page";
-import Heading from "@/src/components/elements/Heading/page";
-import SHero from "@/src/components/SHero/page";
 import { getServices } from "@/sanity/schemas/service/util";
 
 export async function ServivceAll() {

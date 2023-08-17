@@ -1,6 +1,7 @@
-import SkillCard from "../item/page";
+import dynamic from "next/dynamic";
+const Container = dynamic(() => import("@/components/elements/container/page"));
+const SkillCard = dynamic(() => import("@/components/skill/skill/item/page"));
 import { Skill } from "@/types/page";
-import Container from "@/src/components/elements/container/page";
 
 interface Iprops {
   datas: Skill[];

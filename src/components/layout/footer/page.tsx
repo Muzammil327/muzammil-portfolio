@@ -1,11 +1,12 @@
-import { Logo2 } from "../../elements/logo/page";
-import Container from "../../elements/container/page";
+import dynamic from "next/dynamic";
+import Image from "next/image";
 import Link from "next/link";
-import Social from "../../elements/Social/page";
+const Container = dynamic(() => import("@/components/elements/container/page"));
+const Social = dynamic(() => import("@/components/elements/Social/page"));
+import { Logo2 } from "../../elements/logo/page";
 import aboutData from "../../about/resume/data";
 
 export default function Footer() {
-  
   return (
     <>
       <div className="bg-blue-50 mt-8">
@@ -17,9 +18,7 @@ export default function Footer() {
                   <h3 className="mb-7 text-normal font-bold">
                     <Logo2 />
                   </h3>
-                  <p>
-                    {aboutData.description}
-                  </p>
+                  <p>{aboutData.description}</p>
                 </div>
                 <div className="mb-10 block">
                   <h3 className="mb-5 text-lg font-bold">Connect</h3>

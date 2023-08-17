@@ -1,6 +1,7 @@
+import dynamic from "next/dynamic";
 import Image from "next/image";
-import Container from "../../elements/container/page";
-import Social from "../../elements/Social/page";
+const Container = dynamic(() => import("@/components/elements/container/page"));
+const Social = dynamic(() => import("@/components/elements/Social/page"));
 import { urlForImage } from "@/sanity/lib/image";
 import { Blog } from "@/src/types/page";
 

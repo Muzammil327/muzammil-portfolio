@@ -1,7 +1,7 @@
-import { Service } from "@/types/page";
 import Link from "next/link";
 import Image from "next/image";
 import { urlForImage } from "@/sanity/lib/image";
+import { Service } from "@/types/page";
 
 interface IProps {
   datas: Service;

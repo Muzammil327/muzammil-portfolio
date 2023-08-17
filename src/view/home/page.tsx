@@ -1,8 +1,9 @@
-import MHero from "@/components/MHero/page";
+import Link from "next/link";
+import dynamic from "next/dynamic";
+const MHero = dynamic(() => import("@/components/MHero/page"));
+const HSkill = dynamic(() => import("@/components/skill/home/page"));
 import { ServivceHAll } from "../services/All/page";
 import { PortfolioHAll } from "../portfolio/All/page";
-import HSkill from "@/src/components/skill/home/page";
-import Link from "next/link";
 
 export default function HomeTemplate() {
   return (

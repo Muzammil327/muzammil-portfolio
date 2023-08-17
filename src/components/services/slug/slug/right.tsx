@@ -1,7 +1,6 @@
-import React from "react";
-import Social from "../../../elements/Social/page";
+import dynamic from "next/dynamic";
+const Social = dynamic(() => import("@/components/elements/Social/page"));
 import { Type } from "@/src/types/page";
-import { FaArrowRight } from "react-icons/fa";
 
 interface Iprops {
   datas: Type;

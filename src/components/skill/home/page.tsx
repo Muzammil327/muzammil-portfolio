@@ -1,12 +1,12 @@
-import React from "react";
-import Container from "../../elements/container/page";
+import dynamic from "next/dynamic";
 import Image from "next/image";
-import react from '@/public/react.png'
-import nextjs from '@/public/nextjs.png'
-import tailwind from '@/public/tailwindcss.png'
-import sanity from '@/public/sanity.png'
-import Social from "../../elements/Social/page";
 import Link from "next/link";
+const Container = dynamic(() => import("@/components/elements/container/page"));
+const Social = dynamic(() => import("@/components/elements/Social/page"));
+import react from "@/public/react.png";
+import nextjs from "@/public/nextjs.png";
+import tailwind from "@/public/tailwindcss.png";
+import sanity from "@/public/sanity.png";
 
 export default function HSkill() {
   return (
@@ -21,7 +21,7 @@ export default function HSkill() {
               See All Skills
             </Link>
             <div className="mt-8">
-            <Social />
+              <Social />
             </div>
           </div>
           <div className="right col-span-3">
@@ -42,7 +42,7 @@ export default function HSkill() {
                 </div>
               </div>
               <div className="skill">
-              <Image
+                <Image
                   src={nextjs}
                   className="image"
                   alt=""
@@ -57,7 +57,7 @@ export default function HSkill() {
                 </div>
               </div>
               <div className="skill">
-              <Image
+                <Image
                   src={tailwind}
                   className="image"
                   alt=""
@@ -72,7 +72,7 @@ export default function HSkill() {
                 </div>
               </div>
               <div className="skill">
-              <Image
+                <Image
                   src={sanity}
                   className="image"
                   alt=""

@@ -1,8 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
-import Container from "../../elements/container/page";
-import mhero from "@/public/mhero.webp";
-import Social from "../../elements/Social/page";
+import dynamic from "next/dynamic";
+const Container = dynamic(() => import("@/components/elements/container/page"));
+const Social = dynamic(() => import("@/components/elements/Social/page"));
 import { urlForImage } from "@/sanity/lib/image";
 import { Portfolio } from "@/src/types/page";
 

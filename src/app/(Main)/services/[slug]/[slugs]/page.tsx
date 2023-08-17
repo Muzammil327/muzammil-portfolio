@@ -1,9 +1,15 @@
-import PortfolioHero from "@/src/components/services/slug/slug/hero";
-import Portflioleft from "@/src/components/services/slug/slug/left";
-import PortfolioRight from "@/src/components/services/slug/slug/right";
-import Container from "@/src/components/elements/container/page";
+import dynamic from "next/dynamic";
+const Container = dynamic(() => import("@/components/elements/container/page"));
+const ServiceHero = dynamic(
+  () => import("@/components/services/slug/slug/hero")
+);
+const ServiceLeft = dynamic(
+  () => import("@/components/services/slug/slug/left")
+);
+const ServiceRight = dynamic(
+  () => import("@/components/services/slug/slug/right")
+);
 import { getserviceother } from "@/sanity/schemas/service/other/util";
-
 
 type Iprops = {
   params: { slugs: string };
@@ -11,16 +17,16 @@ type Iprops = {
 
 export default async function Services({ params }: Iprops) {
   const service = await getserviceother(params.slugs);
-  
+
   return (
     <Container>
-      <PortfolioHero datas={service} />
+      <ServiceHero datas={service} />
       <div className="grid md:grid-cols-7 grid-cols-1 gap-8">
         <div className="md:col-span-5 col-span-2">
-          <Portflioleft datas={service}  />
+          <ServiceLeft datas={service} />
         </div>
         <div className="md:col-span-2 col-span-1">
-          <PortfolioRight datas={service} />
+          <ServiceRight datas={service} />
         </div>
       </div>
     </Container>

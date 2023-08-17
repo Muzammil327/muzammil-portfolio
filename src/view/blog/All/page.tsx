@@ -1,5 +1,6 @@
-import BlogList from "@/components/blog/List/page";
-import SHero from "@/src/components/SHero/page";
+import dynamic from "next/dynamic";
+const SHero = dynamic(() => import("@/components/SHero/page"));
+const BlogList = dynamic(() => import("@/components/blog/List/page"));
 import { getsBlogs } from "@/sanity/schemas/blog/util";
 
 export default async function BlogAll() {

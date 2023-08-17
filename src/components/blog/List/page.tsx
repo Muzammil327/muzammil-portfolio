@@ -1,6 +1,7 @@
+import dynamic from "next/dynamic";
+const Container = dynamic(() => import("@/components/elements/container/page"));
+const BlogItem = dynamic(() => import("@/components/blog/item/page"));
 import { Blog } from "@/types/page";
-import BlogItem from "../item/page";
-import Container from "@/components/elements/container/page";
 
 interface IProps {
   datas: Blog[];

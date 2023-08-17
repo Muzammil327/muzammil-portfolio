@@ -1,7 +1,6 @@
-import React from "react";
-import Social from "../../elements/Social/page";
-import { Blog, Skill } from "@/src/types/page";
-import { FaArrowRight } from "react-icons/fa";
+import dynamic from "next/dynamic";
+const Social = dynamic(() => import("@/components/elements/Social/page"));
+import { Blog } from "@/src/types/page";
 
 interface Iprops {
   datas: Blog;
@@ -32,7 +31,6 @@ export default function PortfolioRight({ datas }: Iprops) {
           <Social />
         </span>
       </div>
-
     </div>
   );
 }
