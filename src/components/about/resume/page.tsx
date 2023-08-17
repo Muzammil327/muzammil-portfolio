@@ -14,12 +14,12 @@ import aboutData from "./data";
 export default function Resume() {
  
   return (
-    <section className="home_banner_area relative z-10 mb-20">
+    <section className="home_banner_area relative z-10 lg:mb-20 md:mb-12 mb-4">
       <Container>
         <div className="box_1620 relative rounded-xl bg-white p-7">
           <div className="banner_inner flex items-center relative w-full">
             <div className="banner_content text-left text-gray-700">
-              <div className="media grid lg:grid-cols-2 grid-cols-1 gap-12">
+              <div className="media grid lg:grid-cols-2 grid-cols-1 lg:gap-12 md:gap-7 gap-2">
                 <div className="flex">
                   <div>
                     <Image
@@ -33,7 +33,7 @@ export default function Resume() {
                   </div>
                 </div>
 
-                <div className="media-body pt-24">
+                <div className="media-body lg:pt-24 md:pt-14 pt-6">
                   <div className="personal_text text-gray-700">
                     <span className=" text-sm uppercase font-normal">
                       Hello Everybody, i am
@@ -45,37 +45,39 @@ export default function Resume() {
                           {aboutData.name}
                         </span>{" "}
                         <br />
+                        <span className="text-lg">
                         {aboutData.position}
+                        </span>
                       </p>
-                      <p className="text-gray-800 mb-10">{aboutData.description}</p>
-                      <ul className="list basic_info">
-                        <li className="mb-4">
-                          <span className="relative pl-10 text-base text-gray-400">
-                            <i className="absolute left-0 c1 text-">
+                      <p className="text-gray-800 md:mb-10 mb-3 md:text-base text-sm">{aboutData.description}</p>
+                      <ul className="list basic_info mb-3">
+                        <li className="md:mb-4 mb-2">
+                          <span className="relative lg:pl-10 pl-6  md:text-base text-sm text-gray-400 flex items-center">
+                            <i className="absolute left-0 c1 text-base">
                               <FaCalendar />
                             </i>
                             {aboutData.startDate}
                           </span>
                         </li>
-                        <li className="mb-4">
-                          <span className="relative pl-10 text-base text-gray-400">
-                            <i className="absolute left-0 c1 text-">
+                        <li className="md:mb-4 mb-2">
+                          <span className="relative lg:pl-10 pl-6  md:text-base text-sm text-gray-400 flex items-center">
+                            <i className="absolute left-0 c1 text-base">
                               <FaPhone />
                             </i>
                             {aboutData.phone}
                           </span>
                         </li>
-                        <li className="mb-4">
-                          <span className="relative pl-10 text-base text-gray-400">
-                            <i className="absolute left-0 c1 text-">
+                        <li className="md:mb-4 mb-2">
+                          <span className="relative lg:pl-10 pl-6  md:text-base text-sm text-gray-400 flex items-center">
+                            <i className="absolute left-0 c1 text-base">
                               <FaEnvelope />
                             </i>
                             {aboutData.email}
                           </span>
                         </li>
-                        <li className="mb-4">
-                          <span className="relative pl-10 text-base text-gray-400">
-                            <i className="absolute left-0 c1 text-">
+                        <li className="md:mb-4 mb-2">
+                          <span className="relative lg:pl-10 pl-6  md:text-base text-sm text-gray-400 flex items-center">
+                            <i className="absolute left-0 c1 text-base">
                               <FaLocationArrow />
                             </i>
                             {aboutData.location}

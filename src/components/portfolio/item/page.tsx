@@ -23,7 +23,7 @@ export default function PortfolioItem({ datas }: IProps) {
             src={urlForImage(datas.image).url()}
             alt={datas.title}
               title={datas.title}
-              className="w-full h-[250px] object-cover"
+              className="w-full object-cover"
               height={250}
               width={400}
             />

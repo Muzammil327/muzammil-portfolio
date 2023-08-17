@@ -12,7 +12,7 @@ interface Iprops {
 
 export default function PortfolioHero({ datas }: Iprops) {
   return (
-    <div className="mb-16">
+    <div className="mb-2">
       <Container>
         <div className="grid md:grid-cols-2 grid-cols-1 gap-7">
           <div className="lg:py-44 md:py-20 py-8 md:text-left text-center">
@@ -29,14 +29,14 @@ export default function PortfolioHero({ datas }: Iprops) {
               <Social />
             </div>
           </div>
-          <div className="md:pt-12 pt-8 relative my-auto">
+          <div className="md:pt-12 pt-8 relative m-auto">
             <Image
               src={urlForImage(datas.image).url()}
               alt={datas.title}
               title={datas.title}
               height={250}
               width={300}
-              className="w-full rounded-lg my-auto"
+              className="w-auto rounded-lg"
             />
           </div>
         </div>
