@@ -23,7 +23,8 @@ export default function Social() {
         </li>
         <li>
           <Link
-            href="/"
+            href="https://www.linkedin.com/in/muzammil-safdar"
+            target="_blank"
             className="bg h-12 w-12 text-white text-xl rounded-md flex items-center justify-center"
           >
             <FaLinkedinIn />
