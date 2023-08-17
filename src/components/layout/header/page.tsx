@@ -1,5 +1,4 @@
 "use client";
-import Link from "next/link";
 import { Logo1, Logo2 } from "@/components/elements/logo/page";
 import Container from "@/components/elements/container/page";
 import { FaBars, FaTimes, FaAngleRight } from "react-icons/fa";
@@ -15,18 +14,23 @@ export default function Header() {
   const saveFile = () => {
     saveAs(
       "/resume.pdf",
-      "frontend-resume.pdf"
+      "frontend-resume"
     );
   };
 
   return (
     <div className="home py-4">
       <Container>
-        <div className="flex items-center md:gap-16 gap-8 justify-between">
+        <div className="flex items-center md:gap-16 gap-8 justify-between cursor-pointer">
           {/* logo  */}
-          <div>
+          <span
+           onClick={() => {
+            router.push("/");
+            setOpen(false);
+          }}
+          >
             <Logo1 />
-          </div>
+          </span>
           {/* link */}
           <div className="lg:hidden z-50 block mr-4 transition-all bg-black p-2 rounded-md  ">
             <span
@@ -46,9 +50,14 @@ export default function Header() {
                 : "lg:flex hidden items-center gap-8"
             }
           >
-            <div className={open ? "mx-auto my-6" : "hidden"}>
+            <span 
+               onClick={() => {
+                router.push("/");
+                setOpen(false);
+              }}
+            className={open ? "mx-auto my-4 cursor-pointer" : "hidden"}>
               <Logo2 />
-            </div>
+            </span>
             <ul
               className={
                 open ? "flex-col m-2" : "items-center lg:gap-8 gap-4 flex"
