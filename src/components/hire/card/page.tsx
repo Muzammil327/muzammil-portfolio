@@ -52,7 +52,9 @@ export default function HireCard() {
           </Link>
         </div>
         <div className="bg p-10 rounded-lg ">
-          <Link href="/" target="_blank">
+          <Link href="https://www.linkedin.com/in/muzammil-safdar"
+            target="_blank"
+            >
             <div className="image relative">
               <Image
                 src={data.img3}
@@ -66,7 +68,7 @@ export default function HireCard() {
           </Link>
           <Icon />
           <Link
-            href="/"
+           href="https://www.linkedin.com/in/muzammil-safdar"
             target="_blank"
             className="bg-white block w-auto py-2 rounded-3xl mt-4 hover:bg-red-400 transition-all hover:border-2 hover:border-solid border-red-400 border-2 border-solid hover:border-white text-center hover:text-white font-semibold text-lg"   >
             Hire Me
