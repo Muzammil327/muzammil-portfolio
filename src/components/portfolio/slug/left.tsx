@@ -10,7 +10,7 @@ interface Iprops {
 
 export default function Portflioleft({ datas }: Iprops) {
   return (
-    <div className="section">
+    <div className="section article">
       <PortableText value={datas.body} components={PortableTextComponent} />
     </div>
   );

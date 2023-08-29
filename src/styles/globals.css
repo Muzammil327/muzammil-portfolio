@@ -182,3 +182,28 @@ button {
   border: 1px solid rgba(255, 255, 255, 0.2);
   @apply text-base p-4 mb-5 rounded-md font-normal h-auto w-full text-black;
 }
+/* List styles */
+.article ul,
+.article ol {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  /* Style the list items */
+  .article li {
+    padding: 10px 20px;
+    margin: 4px 0;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Add a pseudo-element for bullet point */
+  .article ul li::before {
+    content: "•";
+    margin-right: 10px;
+    color: #007bff;
+  }

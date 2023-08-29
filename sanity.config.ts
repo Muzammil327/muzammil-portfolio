@@ -36,6 +36,8 @@ export default defineConfig({
         console.log(context); // returns { currentUser, dataset, projectId, schema, getClient, documentStore }
         return S.list()
           .title("Portflio Website")
+        
+          
           .items([
             S.listItem()
               .title("Projects")
