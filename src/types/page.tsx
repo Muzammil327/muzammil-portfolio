@@ -28,7 +28,7 @@ export type About = {
 export type Portfolio = {
     _id:string;
     title: string;
-    image:TImage;
+    image?:TImage;
     slug:Slug;
     description: string;
     tag: string;
