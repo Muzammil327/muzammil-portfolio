@@ -9,7 +9,8 @@
     "sbuild": "sanity build",
     "nstart": "next start",
     "sstart": "sanity start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "sdeploy": "sanity deploy"
   },
   "dependencies": {
     "@portabletext/react": "^3.0.4",
